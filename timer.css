@@ -1,0 +1,97 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe6f1, #f2e6ff); /* Soft pink to lavender gradient */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 30px; /* Space below the header */
+}
+
+h1 {
+    font-size: 3em; /* Large title font size */
+    color: #6a11cb; /* Gradient title color */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient text */
+    -webkit-background-clip: text; /* Ensure background clip is applied */
+    -webkit-text-fill-color: transparent; /* Fill color with gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for visibility */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Maximum width for the main content */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Internal padding */
+    background: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Main section styles */
+main {
+    text-align: center; /* Center the content */
+}
+
+/* Custom timer styles */
+.custom-timer {
+    background: #f7d3f5; /* Light background for timer section */
+    padding: 20px; /* Padding inside the timer section */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the timer section */
+}
+
+/* Timer input styles */
+input[type="number"] {
+    width: 80px; /* Fixed width for input fields */
+    padding: 10px; /* Internal padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px; /* Space around inputs */
+    font-size: 1.2em; /* Larger font size */
+}
+
+/* Timer display styles */
+#custom-timer-display {
+    font-size: 3em; /* Large font for timer display */
+    margin: 20px 0; /* Space above and below display */
+    color: #2575fc; /* Timer display color */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px; /* Internal padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: #6a11cb; /* Background color */
+    color: #ffffff; /* White text color */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background: #2575fc; /* Change background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em; /* Smaller title on small screens */
+    }
+
+    input[type="number"] {
+        width: 60px; /* Adjust input width for small screens */
+    }
+}

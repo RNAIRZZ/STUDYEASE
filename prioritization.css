@@ -1,0 +1,136 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe6f1, #f2e6ff); /* Soft pink to lavender gradient */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 30px; /* Space below the header */
+}
+
+h1 {
+    font-size: 3em; /* Large title font size */
+    color: #6a11cb; /* Title color */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient text */
+    -webkit-background-clip: text; /* Ensure background clip is applied */
+    -webkit-text-fill-color: transparent; /* Fill color with gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for visibility */
+}
+
+p {
+    font-size: 1.2em; /* Font size for paragraph */
+    margin: 10px 0; /* Space around paragraph */
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 20px; /* Space above navigation */
+}
+
+nav a {
+    margin: 0 15px; /* Space around links */
+    color: #6a11cb; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+nav a:hover {
+    color: #2575fc; /* Change color on hover */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Maximum width for the main content */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Internal padding */
+    background: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Main section styles */
+main {
+    text-align: center; /* Center the content */
+}
+
+/* Priority tasks section styles */
+.priority-tasks {
+    background: #f7d3f5; /* Light background for priority section */
+    padding: 20px; /* Padding inside the section */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Input styles */
+input[type="text"] {
+    width: calc(60% - 20px); /* Adjust width to accommodate margins */
+    padding: 10px; /* Internal padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 10px 10px 0; /* Space around input */
+    font-size: 1.2em; /* Larger font size */
+}
+
+select {
+    padding: 10px; /* Internal padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Larger font size */
+    margin-right: 10px; /* Space between select and button */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px; /* Internal padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: #6a11cb; /* Background color */
+    color: #ffffff; /* White text color */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background: #2575fc; /* Change background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Task list styles */
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    margin-top: 20px; /* Space above the list */
+}
+
+li {
+    background: #f2e6ff; /* Light lavender background for tasks */
+    padding: 10px; /* Padding for tasks */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px 0; /* Space between tasks */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em; /* Smaller title on small screens */
+    }
+
+    input[type="text"] {
+        width: calc(80% - 20px); /* Adjust input width for small screens */
+    }
+
+    select {
+        width: calc(20% - 20px); /* Adjust select width for small screens */
+    }
+}

@@ -1,0 +1,105 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and background */
+body {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f0f2f5, #c1c4e8);
+    color: #333; /* Darker text color for better readability */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    text-align: center; /* Center header text */
+    padding: 30px; /* Internal padding */
+    background: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+h1 {
+    font-size: 2.5em; /* Large title font size */
+    color: #6a11cb; /* Main title color */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient text */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Fill color with gradient */
+}
+
+/* Logo styles */
+.logo {
+    display: block; /* Center the logo */
+    margin: 20px auto; /* Center logo and add space above and below */
+    max-width: 200px; /* Maximum width for the logo */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Maximum width for the main content */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Internal padding */
+}
+
+/* Quote box styles */
+.quote-box {
+    background: #f7d3f5; /* Light background for quote box */
+    padding: 20px; /* Padding inside the quote box */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the quote box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Box styles */
+.box {
+    background: linear-gradient(135deg, #ffffff, #f7d3f5);
+    border: 1px solid #e0e0e0; /* Light border color */
+    border-radius: 10px; /* Rounded corners */
+    margin: 15px 0; /* Space between boxes */
+    padding: 20px; /* Internal padding */
+    text-align: center; /* Center text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Links in boxes */
+.box a {
+    text-decoration: none; /* No underline */
+    color: #2575fc; /* Link color */
+    font-weight: bold; /* Bold links */
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.box a:hover {
+    color: #6a11cb; /* Change color on hover */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller title on small screens */
+    }
+
+    .logo {
+        max-width: 150px; /* Adjust logo size for small screens */
+    }
+
+    .box {
+        padding: 15px; /* Adjust padding in boxes for small screens */
+    }
+
+    .container {
+        padding: 10px; /* Adjust container padding */
+    }
+}

@@ -1,0 +1,102 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe6f1, #f2e6ff); /* Soft pink to lavender gradient */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 30px; /* Space below the header */
+}
+
+h1 {
+    font-size: 2.5em; /* Large title font size */
+    color: #6a11cb; /* Gradient title color */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient text */
+    -webkit-background-clip: text; /* Ensure background clip is applied */
+    -webkit-text-fill-color: transparent; /* Fill color with gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for visibility */
+}
+
+p {
+    font-size: 1.2em; /* Subtitle font size */
+    color: #666; /* Lighter color for subtitle */
+}
+
+/* Navigation styles */
+nav {
+    margin: 20px 0; /* Space around navigation */
+}
+
+nav a {
+    text-decoration: none; /* No underline */
+    color: #2575fc; /* Link color */
+    font-weight: bold; /* Bold links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #6a11cb; /* Change color on hover */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Maximum width for the main content */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Internal padding */
+    background: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Links section styles */
+.links {
+    margin: 20px 0; /* Space around links section */
+}
+
+/* Box styles */
+.links ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.links li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.links a {
+    text-decoration: none; /* No underline */
+    color: #2575fc; /* Link color */
+    font-weight: bold; /* Bold links */
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.links a:hover {
+    color: #6a11cb; /* Change color on hover */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller title on small screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust subsection title font size */
+    }
+
+    .links li {
+        margin: 5px 0; /* Adjust space between list items for small screens */
+    }
+}

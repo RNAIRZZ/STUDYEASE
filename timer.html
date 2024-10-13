@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Timer</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Customizable Timer</h1>
+            <p>Set timers for various activities.</p>
+            <nav>
+                <a href="index.html">Back to Dashboard</a>
+                <a href="quick-links.html">Quick Links</a>
+                <a href="prioritization.html">Prioritization</a>
+            </nav>
+        </header>
+        <main>
+            <section class="custom-timer">
+                <h2>Set a Timer</h2>
+                <input type="number" id="custom-minutes" placeholder="Minutes" min="0" />
+                <input type="number" id="custom-seconds" placeholder="Seconds" min="0" />
+                <button id="set-timer">Start Timer</button>
+                <div id="custom-timer-display">00:00</div>
+                <button id="stop-custom-timer">Stop Timer</button>
+            </section>
+        </main>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>
+

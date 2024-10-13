@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Prioritization</title>
+    <link rel="stylesheet" href="prioritization.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Prioritization</h1>
+            <p>Color-coded categories to help you prioritize tasks.</p>
+            <nav>
+                <a href="index.html">Back to Dashboard</a>
+                <a href="quick-links.html">Quick Links</a>
+            </nav>
+        </header>
+        <main>
+            <section class="priority-tasks">
+                <h2>Add a Task with Priority</h2>
+                <input type="text" id="priority-task-input" placeholder="Enter task..." />
+                <select id="priority-select">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button id="add-priority-task">Add Task</button>
+                <ul id="priority-task-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="prioritization.js"></script>
+</body>
+</html>

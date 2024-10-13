@@ -1,0 +1,124 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe6f1, #f2e6ff); /* Soft pink to lavender gradient */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 30px; /* Space below the header */
+}
+
+h1 {
+    font-size: 2.5em; /* Large title font size */
+    color: #6a11cb; /* Gradient title color */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient text */
+    -webkit-background-clip: text; /* Ensure background clip is applied */
+    -webkit-text-fill-color: transparent; /* Fill color with gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for visibility */
+}
+
+p {
+    font-size: 1.2em; /* Subtitle font size */
+    color: #666; /* Lighter color for subtitle */
+}
+
+/* Navigation styles */
+nav {
+    margin: 20px 0; /* Space around navigation */
+}
+
+nav a {
+    text-decoration: none; /* No underline */
+    color: #2575fc; /* Link color */
+    font-weight: bold; /* Bold links */
+    margin: 0 15px; /* Space between links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #6a11cb; /* Change color on hover */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Maximum width for the main content */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Internal padding */
+    background: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Note categorization styles */
+.note-categorization {
+    text-align: center; /* Center text */
+}
+
+.note-categorization input,
+.note-categorization textarea {
+    width: calc(100% - 40px); /* Full width with padding */
+    margin: 10px 0; /* Space between input elements */
+    padding: 10px; /* Internal padding */
+    border: 1px solid #ccc; /* Border for input elements */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.note-categorization button {
+    background-color: #6a11cb; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Internal padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.note-categorization button:hover {
+    background-color: #2575fc; /* Change button background on hover */
+}
+
+/* Notes list styles */
+.note-categorization h3 {
+    margin: 20px 0; /* Space around notes heading */
+}
+
+#note-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+#note-list li {
+    padding: 10px; /* Internal padding for list items */
+    border-bottom: 1px solid #e0e0e0; /* Bottom border for list items */
+}
+
+#note-list li:last-child {
+    border-bottom: none; /* Remove bottom border for last item */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller title on small screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust subsection title font size */
+    }
+
+    .note-categorization input,
+    .note-categorization textarea {
+        width: calc(100% - 20px); /* Adjust width for small screens */
+    }
+}
